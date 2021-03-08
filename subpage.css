@@ -1,0 +1,93 @@
+.header {
+    --header-height: 120px;
+}
+
+.header-text h1 {
+    margin: 0;
+    margin-top: 5px;
+    font-size: 82px;
+    color: var(--akash-white);
+}
+
+.body-content h4 {
+    margin: 0;
+    margin-bottom: 5px;
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--akash-navy);
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    font-family: freight-sans-compressed-pro, freight-sans-pro, sans-serif;
+}
+
+
+/**************************************
+/* CONTACT INFO */
+#contact-info {
+    width: 100%;
+    max-width: 400px;
+    font-size: 24px;
+    list-style: none;
+    padding: 0;
+}
+
+.body-content #contact-info p {
+    font-size: 24px;
+}
+#contact-info li {
+    position: relative;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#contact-info li:first-child {
+    padding-top: 0;
+}
+
+#contact-info li:not(:first-child)::after {
+    position: absolute;
+    left: 0;
+    top: 0;
+    content:'';
+    display: block;
+    width: 50%;
+    height: 1px;
+    background: var(--akash-black);
+}
+
+#contact-info a {
+    margin-bottom: 5px;
+    display: block;
+}
+
+
+@media screen and (max-width: 770px) {
+    .header {
+        --header-height: 120px;
+        display: block;
+        top: 0;
+    }
+    
+    .header-content {
+        display: block;
+    }
+    
+    .header-content::after {
+        display: block;
+        height: 5px;
+        width: 100%;
+        position: absolute;
+        top: calc(100% + 2px);
+    }
+    
+    .header-content .header-text {
+        height: 100%;
+    }
+    
+    .header h1 {
+        margin: 0;
+        padding-top: 20px;
+        padding-left: 20px;
+        font-size: 56px;
+    }
+}

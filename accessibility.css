@@ -1,0 +1,154 @@
+/*************************************************************************************/
+/* HIGH CONTRAST */
+.high-contrast * {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    text-shadow: 0 0 0 rgba(0,0,0,0)!important;
+}
+
+body.high-contrast {
+    background: var(--hc-charcoal);
+}
+
+.high-contrast .acc-bg-blue {
+    background: var(--hc-charcoal)!important;
+}
+
+.high-contrast h1, .high-contrast h2, .high-contrast h3, .high-contrast h4, .high-contrast a {
+    color: var(--hc-white);
+}
+
+
+.high-contrast .acc-bg-navy {
+    background: var(--hc-black);
+}
+
+.high-contrast .cta-button-header a {
+    color: var(--hc-yellow);
+}
+
+.high-contrast .cta-button-header a:hover {
+    background: var(--hc-black);
+    color: var(--hc-white);
+    outline: 1px solid var(--hc-yellow);
+}
+
+.high-contrast .navigation a:hover {
+    background: var(--hc-charcoal);
+    color: var(--hc-yellow);
+    outline: 1px solid var(--hc-white);
+}
+
+.high-contrast p {
+    color: var(--hc-yellow);
+}
+
+.high-contrast .accessibility-button {
+    border: 2px solid var(--hc-yellow);
+    background: var(--hc-black);
+}
+
+.high-contrast .accessibility-button.hover-state {
+    background: var(--hc-white)!important;
+}
+
+.high-contrast .accessibility-button.activated-state {
+    background: var(--hc-yellow);
+}
+
+.high-contrast .accessibility-button svg {
+    fill: var(--hc-yellow);
+}
+
+.high-contrast .accessibility-button.hover-state svg {
+    fill: var(--hc-charcoal)!important;
+}
+
+.high-contrast .accessibility-button.activated-state svg {
+    fill: var(--hc-charcoal);
+}
+
+/*************************************************************************************/
+/* READABILITY */
+.readable * {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    text-shadow: 0 0 0 rgba(0,0,0,0)!important;
+}
+
+body.readable {
+    background: var(--readable-cream);
+}
+
+.readable .acc-bg-blue {
+    background: var(--readable-sky);
+}
+
+.readable .acc-bg-navy {
+    background: var(--readable-blue);
+}
+
+.readable h1, .readable h2, .readable h3, .readable h4, .readable a {
+    line-height: 1.5;
+    color: var(--readable-navy)!important;
+}
+
+.readable h1 {
+    letter-spacing: 3px;
+}
+
+.readable h4 {
+    letter-spacing: 1.5px;
+}
+
+.readable .cta-button-header a {
+    letter-spacing: 1.2px;
+}
+
+.readable .cta-button-header a:hover {
+    letter-spacing: 1.5px;
+    background: var(--readable-sky);
+    outline: 1.5px solid var(--readable-navy);
+}
+
+.readable .navigation a {
+    letter-spacing: 1px;
+    font-weight: 500;
+}
+
+.readable .navigation a:hover {
+    letter-spacing: 1.2px;
+    background: var(--readable-sky);
+}
+
+.readable p {
+    font-size: 20px;
+    letter-spacing: 0.75px;
+    line-height: 1.5;
+    color: var(--readable-brown);
+}
+
+.readable .accessibility-button {
+    border: 2px solid var(--readable-brown);
+    background: var(--readable-cream);
+}
+
+.readable .accessibility-button.hover-state {
+    background: var(--readable-blue)!important;
+}
+
+.readable .accessibility-button.activated-state {
+    background: var(--readable-brown);
+}
+
+.readable .accessibility-button svg {
+    fill: var(--readable-brown);
+}
+
+.readable .accessibility-button.hover-state svg {
+    fill: var(--readable-navy)!important;
+}
+
+.readable .accessibility-button.activated-state svg {
+    fill: var(--readable-cream);
+}
